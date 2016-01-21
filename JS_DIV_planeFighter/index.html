@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<Meta http-equiv="Content-Type" Content="text/html; Charset=utf-8">
+		<style type="text/css">
+			body{
+				font-family: "微软雅黑";
+			}
+			.abs{
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			#stage{
+				width: 100%;
+				height: 100%;
+				background-color: #000;
+				overflow: hidden;
+			}
+			#mark{
+				color: #fff;
+				font-size: 24px;
+			}
+			#msgBox{
+				width: 100%;
+				height: 100%;
+			}
+			#msgBox > div{
+				width: 300px;
+				height: 200px;
+				margin: 180px auto;
+				background-color: #fff;
+				cursor: pointer;
+				font-size: 24px;
+				line-height: 380%;
+				font-weight: bold;
+				color: #2a2a2a;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="stage" class="abs" onselectstart="return false">
+			<img id="PlayerPlane" src="src/plane.png" />
+		</div>
+		<!-- <div id="mark" class="abs">
+			
+		</div> -->
+		<div id="msgBox" class="abs">
+			<div id="button">
+				打飞机 v1.1
+				<br />
+				点击开始游戏
+				<br />
+				WASD 移动 J 打炮
+				<br />
+				by 陈轩 20141208
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="CX/CXGlobal.js"></script>
+	<script type="text/javascript" src="CX/AABB.js"></script>
+	<script type="text/javascript" src="CX/CXKeyboard.js"></script>
+	<script type="text/javascript" src="CX/CXTime.js"></script>
+	<script type="text/javascript" src="CX/CXObject.js"></script>
+	<script type="text/javascript" src="CX/CXWorld.js"></script>
+	<script type="text/javascript" src="gameObject/Bullet.js"></script>
+	<script type="text/javascript" src="gameObject/PlayerPlane.js"></script>
+	<script type="text/javascript" src="gameObject/Enemy.js"></script>
+	<script type="text/javascript" src="gameObject/Enemy_1.js"></script>
+	<script type="text/javascript" src="gameObject/Enemy_2.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</html>
